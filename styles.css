@@ -1,0 +1,174 @@
+/* ### Font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@100&family=Roboto:wght@400;700&display=swap');
+
+/* ## Colors */
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --lightCyan: hsl(179, 62%, 63%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+*{
+    
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lightGray);
+    font-size: 16px;
+    font-family: 'karla', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_container {
+    width: 315px;
+    height: 730px;
+    margin: 70px auto 70px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.our_community {
+    height: 270px;
+    background-color: white;
+    padding: 12px 24px 24px 24px;
+    box-sizing: border-box;
+}
+
+.promo {
+    color: var(--brightYellow);
+    margin: 25px 0 10px 0;
+    font-size: 1em;
+}
+
+.title {
+    color: var(--lightCyan);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.our_community p {
+    color: var(--grayishBlue);
+    font-size: 1em;
+    line-height: 27px;
+    margin-top: 16px;
+}
+
+.sign_up {
+    height: 230px;
+    background-color: var(--cyan);
+    color: var(--lightGray);
+    padding: 12px 24px 24px 24px;
+    box-sizing: border-box;
+}
+
+.sign_up h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.pago {
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+
+.mes {
+    font-size: 0.7em;
+}
+
+.sign_up p {
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    height: 46px;
+    background-color: var(--brightYellow);
+    color: white;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: var(--lightGray);
+    font-size: 15px;
+
+}
+
+.why_us {
+    height: 230px;
+    background-color: var(--lightCyan);
+    color: white;
+    padding: 8px 24px 24px 24px;
+    box-sizing: border-box;
+}
+
+.why_us h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+li {
+    font-size: 0.85em;
+    list-style-type: none;
+    line-height: 20px;
+    font-weight: 300;
+    margin-left: -40px;
+}
+
+@media only screen and (min-width:680px) {
+
+    .main_container {
+        width: 636px;
+        height: 476px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 160px auto 100px;
+    }
+
+    .our_community {
+        grid-column: 1/3;
+        padding: 20px 35px 35px 35px;
+        height: 210px;
+    }
+
+    .our_community h2 {
+        font-size: 1.45em;
+    }
+
+    .our_community h2 .promo {
+        font-size: 1.1em;
+    }
+
+    .our_community p {
+        font-size: 0.86em;
+        line-height: 27px;
+        margin-top: 8px;
+    }
+
+.sign_up{
+    padding: 20px 35px 35px 35px;
+    height: 258px;   
+}
+.sign_up h2{
+    font-size: 1.3em;
+}
+.sign_up p{
+    font-size: 0.95em;
+}
+.why_us{
+    padding: 20px 35px 35px 35px;
+    height: 258px; 
+}
+
+}
